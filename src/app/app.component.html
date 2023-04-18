@@ -1,6 +1,7 @@
+<button (click)="login()">Login</button>
 <div class="container-fluid">
   <div>
-    <elsa-studio-root server-url="https://localhost:11000/" monaco-lib-path="assets/monaco">
+    <elsa-studio-root (initializing)="initializing($event)" server-url="http://localhost:32388/" monaco-lib-path="assets/monaco">
       <elsa-studio-dashboard></elsa-studio-dashboard>
     </elsa-studio-root>
   </div>
